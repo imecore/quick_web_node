@@ -1,0 +1,22 @@
+{
+  "app": {
+    "version": "1.0.0",
+    "env": "development",
+    "port": 3000,
+    "keys": ["quickWeb:dev"]
+  },
+  "db": {
+    "url": "mongodb://localhost:27017/quick_web",
+    "options": {
+      "dbName": "quick_web",
+      "user": "root",
+      "pass": "123456"
+    }
+  },
+  "redis":{
+    "url": "redis://:123456@localhost:6379",
+    "database": 0
+  },
+  "desKey": "12345678",
+  "sessionKey": "quickWeb.dev"
+}

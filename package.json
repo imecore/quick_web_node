@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@types/koa": "^2.13.6",
+    "@types/node": "^20.2.5"
+  },
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "@types/koa-bodyparser": "^4.3.10",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa-session": "^6.4.1",
+    "@types/moment": "^2.13.0",
+    "@types/mongoose": "^5.11.97",
+    "@types/redis": "^4.0.11",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.0",
+    "koa-router": "^12.0.0",
+    "koa-session": "^6.4.0",
+    "moment": "^2.29.4",
+    "mongoose": "^7.2.2",
+    "redis": "^4.6.7"
+  }
+}

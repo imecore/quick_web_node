@@ -1,0 +1,23 @@
+version: "3.1"
+
+services:
+  mongo:
+    image: mongo:7.0.2
+    restart: always
+    ports:
+      - "27017:27017"
+    command:
+      - "--auth"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 123456
+      MONGO_INITDB_DATABASE: quick_web
+    volumes:
+      - "/usr/share/zoneinfo/Asia/Shanghai:/etc/localtime"
+      - "../server/test/database/mongodb.js:/docker-entrypoint-initdb.d/init.js:ro"
+
+  redis:
+    image: "redis:latest"
+    command: redis-server --requirepass 123456
+    ports:
+      - "6379:6379"
